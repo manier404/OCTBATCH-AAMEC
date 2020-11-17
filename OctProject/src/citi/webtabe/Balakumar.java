@@ -18,6 +18,7 @@ public class Balakumar {
 		for (int i = 0; i < row.size(); i++) {
 			String text = row.get(i).getText();
 		System.out.println(text);
+		System.out.println(text);
 		}
 	}
 
