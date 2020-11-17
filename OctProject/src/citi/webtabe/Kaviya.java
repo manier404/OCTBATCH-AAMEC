@@ -14,7 +14,7 @@ public class Kaviya {
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\ELCOT\\git\\repository01\\sele\\exe\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://demo.guru99.com/test/write-xpath-table.html");
-		List<WebElement> row = driver.findElements(By.tagName("td"));
+		List<WebElement> row = driver.findElements(By.tagName("tr"));
 		for (int i = 0; i < row.size(); i++) {
 			String text = row.get(i).getText();
 		System.out.println(text);
