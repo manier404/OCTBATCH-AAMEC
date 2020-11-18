@@ -18,7 +18,10 @@ public static void main(String[] args) {
 		driver.get("http://demo.guru99.com/test/write-xpath-table.html");
 		driver.manage().window().maximize();
 		List<WebElement> a = driver.findElements(By.tagName("td"));
-		 
+		for (WebElement b : a) {
+			System.out.println(b.getText());
+		} 
+		
 		 System.out.print("\n\nClose the  chrome :");
 		control=input.next().charAt(0);
 	
